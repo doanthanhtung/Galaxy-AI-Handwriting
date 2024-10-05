@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.galaxy.ai.handwriting'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.galaxy.ai.handwriting"
         minSdk 30
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -29,7 +29,7 @@ android {
 }
 
 dependencies {
-
+    implementation files('libs/galaxyai-handwriting-1.0.0.aar')
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
